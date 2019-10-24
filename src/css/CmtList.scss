@@ -1,0 +1,17 @@
+/* 注意被:local（）包裹起来的类名，会被模块化，默认情况下，所有的类名ID，都被模块化了 */
+.title{
+    color: red;
+    text-align: center;
+    font-weight: 200;
+}
+
+/* css模块化只对 类选择器 和id选择器生效 */
+/* css模块化 不会将标签选择器 模块化 */
+/* h1{
+    font-style:italic;
+} */
+
+/* 通过:global可以把某个类名不在被模块化，而是会全局生效 */
+:global(.test){
+    font-style: italic;
+}

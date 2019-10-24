@@ -1,0 +1,23 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid #ccc;
+    width: 170px;
+    margin: 6px;
+    box-shadow: 0 0 6px #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    .img{
+        width: 100px;
+        height: 140px;
+       margin-left: 31px;
+    }
+
+    &:hover{
+        opacity: 0.9;
+        transform: rotate(1deg) scale(1.03);
+    }
+}
